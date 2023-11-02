@@ -1,0 +1,21 @@
+api_keys:
+  - 8e97e1ff56d41489711a0e62b4751cf1
+
+accounts:
+  - name: tham_tu_biet_yeu99
+    real: deep monte carlo
+    bot_type: 0
+  - name: boydeptrai_yeuemmaimai
+    real: master log
+    bot_type: 1
+
+#accounts:
+#  "120.138.72.33:10145":
+#    danchoixomlieu: +++aWQ9MTI4NTIxNjk5NCZ1c2VybmFtZT1kYW5jaG9peG9tbGlldSZzb2NpYWw9emluZ21lJnNvY2lhbG5hbWU9ZGFuY2hvaXhvbWxpZXUmYXZhdGFyPWh0dHAlM0ElMkYlMkZ6aW5ncGxheS5zdGF0aWMuZzYuemluZy52biUyRmltYWdlcyUyRnpwcCUyRnpwZGVmYXVsdC5wbmcmdGltZT0xNjgyNDk4MTY1Jm90aGVyPWRlZmF1bHQlM0ElM0F6aW5nbWV1bmRlZmluZWQlM0ElM0ExMjg1MjE2OTk0JTNBJTNBMTAwJTNBJTNBNDM3ZmUyYzA0ZWVlMjY2ZDBlYmU1MmZiNzhhZjE2MmMmdG9rZW5LZXk9M2Y4YzI2YzcwN2UxNzI4YWE0YjY0ZGI2ZTAyOGQzZjU=
+#    justatee115: +++aWQ9MTI4NTIwOTE0NiZ1c2VybmFtZT1qdXN0YXRlZTExNSZzb2NpYWw9emluZ21lJnNvY2lhbG5hbWU9anVzdGF0ZWUxMTUmYXZhdGFyPWh0dHAlM0ElMkYlMkZ6aW5ncGxheS5zdGF0aWMuZzYuemluZy52biUyRmltYWdlcyUyRnpwcCUyRnpwZGVmYXVsdC5wbmcmdGltZT0xNjgyNDkwOTk3Jm90aGVyPWRlZmF1bHQlM0ElM0F6aW5nbWV1bmRlZmluZWQlM0ElM0ExMjg1MjA5MTQ2JTNBJTNBMTAwJTNBJTNBYjI0NzRhYzVhMTI4NGRjOTI3MDgyMDdlMmU5MWU5NzImdG9rZW5LZXk9MTNjNGY1YmYwZGUwNDRjMDE1ZjhhMDc1OWFmZTAwNzc=
+#  default:
+#    1: 1
+#    2: 2
+#    3: 3
+#    4: 4
+#    5: 5
