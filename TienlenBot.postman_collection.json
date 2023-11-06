@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "f4702362-0fa5-4b45-9121-32a444a0e0c2",
+		"name": "Tienlen Bot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27530347"
+	},
+	"item": [
+		{
+			"name": "Bots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/tienlen_bots",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tienlen_bots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict Action",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bot_type\":1,\n    \"my_handcards\":[\"4d\",\"6s\",\"7s\",\"7h\",\"8c\",\"8d\",\"9h\",\"Jh\",\"Qc\",\"Qd\",\"Kd\",\"Ah\",\"2h\"],\n    \"st_played_card\":[],\n    \"nd_played_card\":[\"3s\"],\n    \"rd_played_card\":[],\n    \"historical_action\":[],\n    \"legal_actions\":[[],[\"4d\"],[\"6s\"],[\"7s\"],[\"7h\"],[\"8c\"],[\"8d\"],[\"9h\"],[\"Jh\"],[\"Qc\"],[\"Qd\"],[\"Kd\"],[\"Ah\"],[\"2h\"]]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/tienlen_bots/hit-cards",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tienlen_bots",
+						"hit-cards"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
