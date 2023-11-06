@@ -18,27 +18,9 @@ def bot() -> list[dict]:
     return res
 
 
-@app.get("/tienlen_bots/actives")
-def bot_infos() -> list[BotInfo]:
-    infos = []
-    for bot in pool.bots:
-        infos.append(BotInfo.create(bot))
+@app.options("/tienlen_bots/hit-cards")
+def bot_hit_cards(req: HitCardReq) -> HitCardRes:
+    pred_action = pool.predict_action(req)
 
-    return infos
-
-
-@app.post("/tienlen_bots/join-table")
-def bot_join_table(req: JoinRoomReq) -> JoinRoomRes:
-    bot = pool.create_bot(req.bot_type)
-
-    print(bot)
-
-    if bot is None:
-        return JoinRoomRes(success=False)
     
-    return JoinRoomRes(success=True)
-
-
-@app.post("/tienlen_bots/leave-table")
-def bot_leave_table(req: LeaveRoomReq) -> LeaveRoomRes:
-    return LeaveRoomRes(success=True)
+    return HitCardRes(success=True, pred_action=pred_action)
